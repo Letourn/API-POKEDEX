@@ -13,7 +13,7 @@ const POKEDEX = './DATA/pokedex.json';
 const IMAGES = './FILES/images';
 
 //Définir un port 
-const PORT = 5001;
+const PORT = 8080;
 
 // Lancer un serveur sur un port 
 const express = require('express'); //Oblige qu'il y est la dépendance 'express' d'installé
@@ -29,7 +29,7 @@ app.use(cors());
 //Lancement du serveur et attente d'une requête du client
 app.listen(
     PORT,           //Port
-    '127.0.0.1',    //Adresse
+    '172.16.193.254',    //Adresse
     () => {         //Fonction de callback (n'a pas de nom)
         console.log('Serveur Pokedex is listening on ' + PORT);
     }
